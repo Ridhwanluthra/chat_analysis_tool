@@ -1,4 +1,4 @@
 Person1: Hey Hi, Umm whats your name?
 Person2: hey, my name is Bob.
-Person1: Bob is therecatinthehat?
+Person1: Bob is thecatinthehat?
 Person2: hmm! no she is playing with hat.
