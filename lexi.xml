@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<my_dict>
+    <entry>
+        <token>Person1</token>
+    </entry>
+    <entry tags="UH NNP">
+        <token>Hey</token>
+    </entry>
+    <entry>
+        <token>Hi</token>
+    </entry>
+    <entry tags="WP WDT">
+        <token>what</token>
+    </entry>
+    <entry tags="VBP VBZ NNS">
+        <token>is</token>
+    </entry>
+    <entry tags="PRP$ VBP">
+        <token>your</token>
+    </entry>
+    <entry tags="UH VBP NN VB">
+        <token>name</token>
+    </entry>
+    <entry>
+        <token>Person2</token>
+    </entry>
+    <entry>
+        <token>hey</token>
+    </entry>
+    <entry tags="JJ PRP$ UH PRP">
+        <token>my</token>
+    </entry>
+    <entry tags="UH VBP NN VB">
+        <token>name</token>
+    </entry>
+    <entry tags="VBP VBZ NNS">
+        <token>is</token>
+    </entry>
+    <entry tags="NNP">
+        <token>Bob</token>
+    </entry>
+    <entry>
+        <token>Person1</token>
+    </entry>
+    <entry tags="NNP">
+        <token>Bob</token>
+    </entry>
+    <entry tags="VBP VBZ NNS">
+        <token>is</token>
+    </entry>
+    <entry>
+        <token>Person2</token>
+    </entry>
+    <entry tags="UH RB NN DT">
+        <token>no</token>
+    </entry>
+    <entry tags="PRP">
+        <token>she</token>
+    </entry>
+    <entry tags="VBP VBZ NNS">
+        <token>is</token>
+    </entry>
+    <entry tags="JJ VBG NN">
+        <token>playing</token>
+    </entry>
+    <entry tags="JJ RB RP IN">
+        <token>with</token>
+    </entry>
+    <entry tags="NN">
+        <token>hat</token>
+    </entry>
+    <entry tags="DT NNP">
+        <token>the</token>
+    </entry>
+    <entry tags="NN">
+        <token>cat</token>
+    </entry>
+    <entry tags="RB RBR FW NNP RP IN">
+        <token>in</token>
+    </entry>
+    <entry tags="DT NNP">
+        <token>the</token>
+    </entry>
+    <entry tags="NN">
+        <token>hat</token>
+    </entry>
+</my_dict>

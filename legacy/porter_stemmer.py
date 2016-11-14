@@ -1,14 +1,21 @@
+import re
+
 class porter_stemmer:
+    def __init__(self):
+        self.re_is_cons = re.compile('[^aeiou]', re.IGNORECASE)
+        self.re_contains_vowel = re.compile('.*[aeiou].*', re.IGNORECASE)
+
+#############################################################################
+# All the helper function for porter's stemming algorithm
+#############################################################################
     def is_cons(self, letter):
-        if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u':
-            return False
-        else:
-            return True
+        return bool(self.re_is_cons.match(letter))
 
     def is_consonant(self, word, i):
         letter = word[i]
         if self.is_cons(letter):
-            if letter == 'y' and is_cons(word[i-1]):
+            #treating y as vowel if the letter before is vowel
+            if letter == 'y' and self.is_cons(word[i-1]):
                 return False
             else:
                 return True
@@ -16,35 +23,27 @@ class porter_stemmer:
             return False
 
     def is_vowel(self, word, i):
-        return not(is_consonant(word, i))
+        return not(self.is_consonant(word, i))
 
     # *S
     def ends_with(self, stem, letter):
-        if stem.endswith(letter):
-            return True
-        else:
-            return False
+        return stem.endswith(letter)
 
     # *v*
     def contains_vowel(self, stem):
-        for i in stem:
-            if not self.is_cons(i):
-                return True
-        return False
+        return bool(self.re_contains_vowel.match(stem))
 
     # *d
     def double_cons(self, stem):
         if len(stem) >= 2:
-            if self.is_consonant(stem, -1) and self.is_consonant(stem, -2):
-                return True
-            else:
-                return False
+            return bool(self.is_consonant(stem, -1) and self.is_consonant(stem, -2))
         else:
             return False
 
+    #gets the structure of the word in terms of [C][CV]*[V]
     def get_form(self, word):
         form = []
-        formStr = ''
+        form_str = ''
         for i in range(len(word)):
             if self.is_consonant(word, i):
                 if i != 0:
@@ -61,8 +60,8 @@ class porter_stemmer:
                 else:
                     form.append('V')
         for j in form:
-            formStr += j
-        return formStr
+            form_str += j
+        return form_str
 
     def get_m(self, word):
         form = self.get_form(word)
@@ -72,6 +71,7 @@ class porter_stemmer:
     # *o
     def cvc(self, word):
         if len(word) >= 3:
+            #picking the last 3 letters
             f = -3
             s = -2
             t = -1
@@ -297,6 +297,8 @@ class porter_stemmer:
         word = self.step_5b(word)
         return word
 
-w = 'addresses'
-p = porter_stemmer()
-print(p.stem(w))
+from word_segmentation import word_list
+#word_list = th()
+for i in range(len(word_list)):
+    p = porter_stemmer()
+    print(word_list[i],":  ",p.stem(word_list[i]))
