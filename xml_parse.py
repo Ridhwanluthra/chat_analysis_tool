@@ -4,4 +4,4 @@ tree = etree.parse('dict.xml')
 root = tree.getroot()
 for child in root:
 	for n in child:
-		print(type(n.text))
+		print(n.text, child.attrib['tags'])
