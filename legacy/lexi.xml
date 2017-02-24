@@ -1,87 +1,90 @@
 <?xml version="1.0" ?>
 <my_dict>
-    <entry person="1">
+    <entry>
         <token>Person1</token>
     </entry>
-    <entry person="1" tags="UH NNP">
+    <entry tags="UH NNP">
         <token>Hey</token>
     </entry>
-    <entry person="1">
+    <entry>
         <token>Hi</token>
     </entry>
-    <entry person="1" tags="WP WDT">
+    <entry tags="WP WDT">
         <token>what</token>
     </entry>
-    <entry person="1" tags="VBP VBZ NNS">
+    <entry tags="VBP VBZ NNS">
         <token>is</token>
     </entry>
-    <entry person="1" tags="PRP$ VBP">
+    <entry tags="PRP$ VBP">
         <token>your</token>
     </entry>
-    <entry person="1" tags="UH VBP NN VB">
+    <entry tags="UH VBP NN VB">
         <token>name</token>
     </entry>
-    <entry person="2">
+    <entry>
         <token>Person2</token>
     </entry>
-    <entry person="2">
+    <entry>
         <token>hey</token>
     </entry>
-    <entry person="2" tags="JJ PRP$ UH PRP">
+    <entry tags="JJ PRP$ UH PRP">
         <token>my</token>
     </entry>
-    <entry person="2" tags="UH VBP NN VB">
+    <entry tags="UH VBP NN VB">
         <token>name</token>
     </entry>
-    <entry person="2" tags="VBP VBZ NNS">
+    <entry tags="VBP VBZ NNS">
         <token>is</token>
     </entry>
-    <entry person="2" tags="NNP">
+    <entry tags="NNP">
         <token>Bob</token>
     </entry>
-    <entry person="1">
+    <entry>
         <token>Person1</token>
     </entry>
-    <entry person="1" tags="NNP">
+    <entry tags="NNP">
         <token>Bob</token>
     </entry>
-    <entry person="1" tags="VBP VBZ NNS">
+    <entry tags="VBP VBZ NNS">
         <token>is</token>
     </entry>
-    <entry person="1" tags="DT NNP">
+    <entry tags="DT NNP">
         <token>the</token>
     </entry>
-    <entry person="1" tags="NN">
+    <entry tags="NN">
         <token>cat</token>
     </entry>
-    <entry person="1" tags="RB RBR FW NNP RP IN">
-        <token>in</token>
-    </entry>
-    <entry person="1" tags="DT NNP">
-        <token>the</token>
-    </entry>
-    <entry person="1" tags="NN">
-        <token>hat</token>
-    </entry>
-    <entry person="2">
-        <token>Person2</token>
-    </entry>
-    <entry person="2" tags="UH RB NN DT">
-        <token>no</token>
-    </entry>
-    <entry person="2" tags="PRP">
-        <token>she</token>
-    </entry>
-    <entry person="2" tags="VBP VBZ NNS">
+    <entry tags="VBP VBZ NNS">
         <token>is</token>
     </entry>
-    <entry person="2" tags="JJ VBG NN">
+    <entry tags="RB RBR FW NNP RP IN">
+        <token>in</token>
+    </entry>
+    <entry tags="DT NNP">
+        <token>the</token>
+    </entry>
+    <entry tags="NN">
+        <token>hat</token>
+    </entry>
+    <entry>
+        <token>Person2</token>
+    </entry>
+    <entry tags="UH RB NN DT">
+        <token>no</token>
+    </entry>
+    <entry tags="PRP">
+        <token>she</token>
+    </entry>
+    <entry tags="VBP VBZ NNS">
+        <token>is</token>
+    </entry>
+    <entry tags="JJ VBG NN">
         <token>playing</token>
     </entry>
-    <entry person="2" tags="JJ RB RP IN">
+    <entry tags="JJ RB RP IN">
         <token>with</token>
     </entry>
-    <entry person="2" tags="NN">
+    <entry tags="NN">
         <token>hat</token>
     </entry>
 </my_dict>

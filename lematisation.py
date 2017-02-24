@@ -130,7 +130,7 @@ class porter_stemmer:
             word = self.replace(word, 'ies', 'i')
         elif word.endswith('ss'):
             word = self.replace(word, 'ss', 'ss')
-        elif word.endswith('s'):
+        elif word.endswith('s') and len(word) > 2:
             word = self.replace(word, 's', '')
         else:
             pass
@@ -160,10 +160,10 @@ class porter_stemmer:
             if word.endswith('at') or word.endswith(
                     'bl') or word.endswith('iz'):
                 word += 'e'
-            elif self.double_cons(word) and not
-            self.ends_with(word, 'l') and not
-            self.ends_with(word, 's') and not
-            self.ends_with(word, 'z'):
+            elif (self.double_cons(word) and
+                    not self.ends_with(word, 'l') and
+                    not self.ends_with(word, 's') and
+                    not self.ends_with(word, 'z')):
                 word = word[:-1]
             elif self.get_m(word) == 1 and self.cvc(word):
                 word += 'e'
@@ -308,7 +308,7 @@ class porter_stemmer:
     def stem(self, word):
         word = self.step_1a(word)
         word = self.step_1b(word)
-        word = self.step_1c(word)
+        # word = self.step_1c(word)
         word = self.step_2(word)
         word = self.step_3(word)
         word = self.step_4(word)

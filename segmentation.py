@@ -123,6 +123,6 @@ class segmentation(object):
         print(len(string_list))
         string_list = self.remove_punctuation(string_list)
         string_list = self.remove_extra(string_list)
-        string_list = self.stupid_segment(string_list)
+        # string_list = self.stupid_segment(string_list)
         print(len(string_list))
         return string_list
